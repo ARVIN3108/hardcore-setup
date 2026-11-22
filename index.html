@@ -1,0 +1,13 @@
+@echo off
+echo Setting up your PC...
+
+mklink /d %localappdata%\Discord F:\ChatSoft\Discord\Discord
+echo Please install Equicord manually
+curl -sL https://github.com/ARVIN3108/Equicord-Launcher/releases/download/latest/EquicordInstaller.exe > %temp%\EquicordInstaller.exe
+start %temp%\EquicordInstaller.exe
+echo Resume the setup after completing installation of Equicord
+pause
+echo Installing your Apps through WinGet...
+winget install 9NKSQGP7F2NH Skillbrains.Lightshot 9MVVSZK43QQW XPDM17HK323C4X Discord.Discord.PTB 9PC3H3V7Q9CH PDFGear
+echo Completed! You can now use the PC!
+pause
